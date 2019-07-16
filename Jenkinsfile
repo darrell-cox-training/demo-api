@@ -16,6 +16,7 @@ node {
           -e GIT_REVISIONS_TO_VERIFY=1 \
           controlplane/keybase:latest
       '''
+    }
   }
 
   stage('Build') {
