@@ -2,7 +2,7 @@ node {
   stage('Checkout') {
     checkout scm
   }
-
+/*
   stage('Verify') {
     withCredentials([
         file(credentialsId: 'keybase-envfile',
@@ -18,7 +18,8 @@ node {
       '''
     }
   }
-
+*/
+	
   stage('Build') {
     withCredentials([
         usernamePassword(credentialsId: 'docker-credentials',
